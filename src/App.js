@@ -3,11 +3,15 @@ import './App.css';
 import TodoForm from "./component/TodoForm";
 import TodoList from "./component/TodoList";
 
-function App() {
+  function App() {
   const [todos , setTodos] = useState([]);
-  
-  function addTodo(todo) {
+
+   function addTodo(todo) {
     setTodos([todo, ...todos])
+  }
+
+  const deleteTodos = (id: String) => {
+    setTodos([" ", ...todos])
   }
 
   return (

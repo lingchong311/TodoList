@@ -5,8 +5,8 @@ function TodoList({ todos }) {
     return(
         <ul>
             {
-                todos.map(todo => (
-                     <Todo key={todo.id} todo={todo}/>
+                todos.map(result => (
+                     <Todo key={result.id} todo={result}/>
                 ))
             }
         </ul>
